@@ -1,4 +1,4 @@
-# Splitty - OOPP Team 57
+# Splitty
 
 This repository contains our JavaFX/Spring implementation of the **Splitty** project.
 
