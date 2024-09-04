@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="328.0" prefWidth="530.0" styleClass="primary-color" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.AddParticipantCtrl">
+    <TextField fx:id="nameTextField" layoutX="94.0" layoutY="96.0" prefHeight="25.0" prefWidth="411.0" />
+    <TextField fx:id="emailTextField" layoutX="95.0" layoutY="137.0" prefHeight="25.0" prefWidth="411.0" />
+    <TextField fx:id="ibanTextField" layoutX="95.0" layoutY="174.0" prefHeight="25.0" prefWidth="411.0" />
+    <TextField fx:id="bicTextField" layoutX="95.0" layoutY="211.0" prefHeight="25.0" prefWidth="411.0" />
+    <Label layoutX="45.0" layoutY="100.0" styleClass="primary-color" text="%name_label">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+    </Label>
+    <Label layoutX="52.0" layoutY="215.0" styleClass="primary-color" text="BIC">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+    </Label>
+    <Label layoutX="47.0" layoutY="178.0" styleClass="primary-color" text="IBAN">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+    </Label>
+    <Label layoutX="46.0" layoutY="141.0" styleClass="primary-color" text="%email_label">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+    </Label>
+    <Label fx:id="title" layoutX="147.0" layoutY="22.0" styleClass="primary-color" text="%add_edit_participant_label">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+
+    <Button fx:id="back_button" layoutX="41.0" layoutY="23.0" mnemonicParsing="false" onAction="#cancel" text="%back_label" />
+    <Button fx:id="saveButton" layoutX="382.0" layoutY="278.0" mnemonicParsing="false" onAction="#onSave" prefHeight="25.0" prefWidth="122.0" text="%add_label" />
+   <stylesheets>
+      <URL value="@../styles/LightMode.css" />
+      <URL value="@../styles/DarkMode.css" />
+   </stylesheets>
+</Pane>

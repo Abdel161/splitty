@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="434.0" styleClass="primary-color" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.EditTagCtrl">
+   <children>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#goBack" prefHeight="30.0" prefWidth="78.0" text="%back_label" />
+      <Label layoutX="113.0" layoutY="37.0" styleClass="primary-color" text="%edit_tag_label">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ColorPicker fx:id="tagColor" layoutX="216.0" layoutY="262.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="59.0" layoutY="183.0" styleClass="primary-color" text="%tag_name_label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="261.0" styleClass="primary-color" text="%tag_color_label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tagName" layoutX="216.0" layoutY="184.0" />
+      <Button fx:id="addButton" layoutX="59.0" layoutY="330.0" mnemonicParsing="false" onAction="#saveTag" prefHeight="48.0" prefWidth="125.0" text="%save_tag_button_label" />
+      <Label layoutX="59.0" layoutY="110.0" styleClass="primary-color" text="%tag_select_label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="tagDropdown" layoutX="215.0" layoutY="110.0" prefWidth="150.0" />
+      <Button fx:id="deleteButton" layoutX="227.0" layoutY="330.0" mnemonicParsing="false" onAction="#deleteTag" prefHeight="48.0" prefWidth="125.0" text="%delete_tag_button_label" />
+   </children>
+   <stylesheets>
+      <URL value="@../styles/LightMode.css" />
+      <URL value="@../styles/DarkMode.css" />
+   </stylesheets>
+</Pane>

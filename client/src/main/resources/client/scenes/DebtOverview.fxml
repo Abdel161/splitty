@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="396.0" prefWidth="681.0" styleClass="primary-color" xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.DebtOverviewCtrl">
+    <children>
+        <Text layoutX="149.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%open_debts_label">
+            <font>
+                <Font size="36.0"/>
+            </font>
+        </Text>
+        <Button fx:id="backButton" layoutX="36.0" layoutY="27.0" mnemonicParsing="false" onAction="#onBack"
+                text="%back_label">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Button>
+        <Text fx:id="selectParticipant" layoutX="51.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="%select_participant">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Text>
+        <ComboBox fx:id="participantDropdown" layoutX="200.0" layoutY="87.0" prefWidth="150.0"/>
+        <Button fx:id="filterDebts" layoutX="559.0" layoutY="85.0" mnemonicParsing="false" onAction="#filterDebts"
+                prefHeight="30.0" prefWidth="92.0" text="Filter">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Button>
+        <HBox layoutX="51.0" layoutY="144.0" prefHeight="201.0" prefWidth="600.0">
+            <children>
+                <ScrollPane prefHeight="343.0" prefWidth="646.0">
+                    <content>
+                        <VBox fx:id="debtList" prefHeight="200.0" prefWidth="482.0"/>
+                    </content>
+                </ScrollPane>
+            </children>
+        </HBox>
+    </children>
+    <stylesheets>
+        <URL value="@../styles/LightMode.css"/>
+        <URL value="@../styles/DarkMode.css"/>
+    </stylesheets>
+</Pane>

@@ -1,0 +1,47 @@
+.primary-color {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: black;
+}
+
+.secondary-color {
+    -fx-background-color: #E7E7E7;
+    -fx-text-fill: black;
+}
+
+.round-border {
+    -fx-background-radius: 100;
+}
+
+.text-color-light {
+    -fx-text-fill: black;
+}
+
+#scrollPane .label {
+    -fx-text-fill: black;
+}
+
+.button, .combo-box {
+    -fx-background-color: #ADDFFF;
+    -fx-text-fill: #233231;
+    -fx-border-color: #C5FFFD;
+}
+
+.text-field, .text-field {
+    -fx-background-color: #d3d3d3;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: black;
+}
+
+.combo-box .list-cell:focused {
+    -fx-text-fill: black;
+}
+
+.combo-box .list-view .list-cell:hover {
+    -fx-text-fill: white;
+}
+
+.combo-box .list-view .list-cell:selected {
+    -fx-text-fill: white;
+}

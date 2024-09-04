@@ -1,0 +1,51 @@
+.primary-color {
+    -fx-background-color: #383838;
+    -fx-text-fill: white;
+}
+
+.secondary-color {
+    -fx-background-color: #282828;
+    -fx-text-fill: white;
+}
+
+.round-border {
+    -fx-background-radius: 100;
+}
+
+.text-color-light {
+    -fx-text-fill: white;
+}
+
+#parent .dark-scroll-pane {
+    -fx-background-color: grey;
+}
+
+#scrollPane .label {
+    -fx-text-fill: white;
+}
+
+.button, .combo-box {
+    -fx-background-color: #23595d;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #203354;
+}
+
+.text-field, .text-field {
+    -fx-background-color: #d3d3d3;
+}
+
+.text {
+    -fx-background-color: white;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: black;
+}
+
+.combo-box .list-cell:hover {
+    -fx-text-fill: white;
+}
+
+.combo-box .list-cell:selected {
+    -fx-text-fill: white;
+}

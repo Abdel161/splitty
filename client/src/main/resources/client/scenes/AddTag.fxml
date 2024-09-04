@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="434.0" styleClass="primary-color" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.AddTagCtrl">
+   <children>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#goBack" prefHeight="30.0" prefWidth="78.0" text="%back_label" />
+      <Label layoutX="113.0" layoutY="37.0" styleClass="primary-color" text="%create_tag_label">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ColorPicker fx:id="tagColor" layoutX="228.0" layoutY="177.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="59.0" layoutY="100.0" styleClass="primary-color" text="%tag_name_label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="176.0" styleClass="primary-color" text="%tag_color_label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tagName" layoutX="228.0" layoutY="101.0" />
+      <Button fx:id="addButton" layoutX="155.0" layoutY="232.0" mnemonicParsing="false" onAction="#addTag" prefHeight="48.0" prefWidth="125.0" text="%add_tag_button_label" />
+   </children>
+   <stylesheets>
+      <URL value="@../styles/LightMode.css" />
+      <URL value="@../styles/DarkMode.css" />
+   </stylesheets>
+</Pane>

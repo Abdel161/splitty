@@ -1,0 +1,36 @@
+.background {
+    -fx-background-color: #f0f0f0;
+}
+
+.button, .combo-box {
+    -fx-background-color: #ADDFFF;
+    -fx-text-fill: #233231;
+    -fx-border-color: #C5FFFD;
+}
+
+.focused {
+    -fx-border-color: #009900;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(gaussian, #009900, 10, 0.5, 0, 0);
+}
+
+.button:focused {
+    -fx-border-color: #009900;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-effect: dropshadow(gaussian, #009900, 10, 0.5, 0, 0);
+}
+
+.scroll-pane > .corner, .scroll-bar:vertical, .scroll-bar:horizontal {
+    -fx-background-color: #d3d3d3;
+}
+
+.text-field, .text-field {
+    -fx-background-color: #d3d3d3;
+}
+
+.scroll-pane {
+    -fx-hbar-policy: never;
+}
