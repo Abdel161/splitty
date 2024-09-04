@@ -9,14 +9,10 @@ The project includes the Gradle wrapper (`gradlew`), so there is no need to inst
 To get started with running the application, follow these steps:
 
 1. Clone the repository to your local machine:
-```bash
-$ git clone git@gitlab.ewi.tudelft.nl:cse1105/2023-2024/teams/oopp-team-57.git
-```
+
 
 2. Navigate to the project directory:
-```bash
-$ cd oopp-team-57
-```
+
 
 ## Running the Application
 
@@ -91,7 +87,3 @@ The admin screen can be accessed through the `Admin` button on the start screen,
 ### Extensions
 
 We have implemented every extension for the project: Live Language Switch, Detailed Expenses, Foreign Currency, Open Debts, Statistics and Email Notification.
-
-## Support
-
-If you encounter any issues while running the application, have any questions, or wish to submit a new language, please feel free to [open an issue](https://gitlab.ewi.tudelft.nl/cse1105/2023-2024/teams/oopp-team-57/-/issues) in this repository.
